@@ -19,7 +19,8 @@ export default class ListView extends View {
 			installButton.textContent = appName;
 			this.installButtons.push({
 				el: installButton,
-				zip: appData.zip
+				zip: appData.zip,
+				manifest: appData.manifest
 			});
 
 			this.el.appendChild(installButton);
